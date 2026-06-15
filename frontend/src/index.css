@@ -174,7 +174,6 @@ html, body, #root {
   background: var(--primary);
   color: #fff;
 }
-
 .btn-sm { height: 32px; padding: 0 14px; font-size: 12px; border-radius: var(--radius-sm); }
 .btn-lg { height: 48px; padding: 0 28px; font-size: 15px; border-radius: var(--radius-lg); }
 .btn-icon { width: 40px; height: 40px; padding: 0; border-radius: var(--radius-md); }
@@ -386,3 +385,4 @@ select.input option {
 .product-tag-sale      { background: var(--error-subtle); color: var(--error); }
 .product-tag-hot       { background: rgba(253,126,20,0.1); color: var(--accent); }
 .product-tag-featured  { background: var(--primary-subtle); color: var(--primary); }
+/* This is the main css file  which held in fronted folder. */

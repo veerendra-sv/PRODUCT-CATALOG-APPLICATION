@@ -52,4 +52,5 @@ createRoot(document.getElementById('root')).render(
       </Routes>
     </ErrorBoundary>
   </BrowserRouter>
-)
+  // This is the main jsx  which held in fronted folder.
+)

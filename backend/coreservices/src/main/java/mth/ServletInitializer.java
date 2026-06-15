@@ -11,3 +11,4 @@ public class ServletInitializer extends SpringBootServletInitializer {
 	}
 
 }
+//This is the main css file  which held in fronted folder.

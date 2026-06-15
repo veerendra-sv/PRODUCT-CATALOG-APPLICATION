@@ -119,3 +119,4 @@ async def reports_gateway(path: str, request: Request):
 @app.get("/health")
 async def health():
     return {"status": "Gateway is running", "upstream": SPRING_BASE, "search": NODE_BASE}
+#This is the main css file  which held in fronted folder. */

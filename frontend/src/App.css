@@ -10,7 +10,7 @@
   --auth-border: #e0e0e0;
   --auth-border-focus: #000000;
   --auth-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
+}/* This is the main css file  which held in fronted folder. */
 
 .auth-root {
   width: 100%;
