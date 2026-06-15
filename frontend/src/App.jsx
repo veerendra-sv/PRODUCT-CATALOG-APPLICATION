@@ -292,5 +292,6 @@ const App = () => {
     </div>
   );
 };
-//This is the app jsx  which held in fronted folder.
+
 export default App;
+//This is the app jsx  which held in fronted folder.
