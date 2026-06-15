@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const app         = express();
 const PORT        = process.env.PORT        || 3001;
 const MONGO_URI   = process.env.MONGO_URI;
-const SPRING_BASE = process.env.SPRING_BASE || 'http://localhost:8001';
+const SPRING_BASE = process.env.SPRING_BASE || 'https://product-catalog-application.onrender.com';
 
 app.use(cors());
 app.use(express.json());

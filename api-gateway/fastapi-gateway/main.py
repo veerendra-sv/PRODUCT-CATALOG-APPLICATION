@@ -14,7 +14,7 @@ app.add_middleware(
 )
 
 # ─── Spring Boot base URL ──────────────────────────────────────────────────────
-SPRING_BASE = "http://localhost:8001"
+SPRING_BASE = "https://product-catalog-application.onrender.com"
 
 # ─── Node.js Search Service base URL ─────────────────────────────────────────
 NODE_BASE = "http://localhost:3001"

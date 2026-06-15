@@ -4,7 +4,7 @@ import httpx
 
 router = APIRouter(prefix="/authservice")
 
-SPRING_URL = "http://localhost:8001/"
+SPRING_URL = "https://product-catalog-application.onrender.com/"
 
 @router.post("/signup")
 async def signup(U: SignupSchema):
