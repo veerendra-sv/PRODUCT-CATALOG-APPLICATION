@@ -1340,3 +1340,12 @@
 /* ── override: home-page has no margin-left (no sidebar) ── */
 .home-page * { box-sizing: border-box; }
 
+.ns-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+}
+
+

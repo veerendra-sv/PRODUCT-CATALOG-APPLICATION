@@ -211,23 +211,6 @@ const Home = () => {
   return (
     <div className="home-page">
 
-      {/* ── 1. ANNOUNCEMENT BAR ─────────────────────── */}
-      <div className="ns-topbar">
-        <div className="ns-topbar-left">
-          <Phone size={13} />
-          <span>Need help? Call us: +91 98765 43210</span>
-        </div>
-        <div className="ns-topbar-center" key={promoIdx}>
-          <span>{PROMOS[promoIdx].icon}</span>
-          <span>{PROMOS[promoIdx].text}</span>
-        </div>
-        <div className="ns-topbar-right">
-          <span>EN</span>
-          <span>|</span>
-          <span>₹ INR</span>
-        </div>
-      </div>
-
       {/* ── 2. HEADER (Logo + Search + Actions) ─────── */}
       <header className="ns-header">
         <Link to="/home" className="ns-logo">Product<span style={{color:'#0d6efd'}}>Shop</span></Link>
@@ -251,7 +234,9 @@ const Home = () => {
             style={{position:'relative'}}
             onClick={e => { e.stopPropagation(); setProfileOpen(o => !o); }}
           >
-            <User size={22} />
+            <div className="ns-icon-wrap">
+              <User size={22} />
+            </div>
             <span>Account</span>
             {profileOpen && (
               <div className="ns-profile-dropdown" onClick={e => e.stopPropagation()}>
@@ -281,7 +266,7 @@ const Home = () => {
 
           {!admin && (
             <Link to="/cart" className="ns-header-icon">
-              <div style={{position:'relative'}}>
+              <div className="ns-icon-wrap">
                 <Heart size={22} />
               </div>
               <span>Wishlist</span>
@@ -290,7 +275,7 @@ const Home = () => {
 
           {!admin && (
             <Link to="/cart" className="ns-header-icon">
-              <div style={{position:'relative'}}>
+              <div className="ns-icon-wrap" style={{position:'relative'}}>
                 <ShoppingCart size={22} />
                 <span className="ns-badge">0</span>
               </div>

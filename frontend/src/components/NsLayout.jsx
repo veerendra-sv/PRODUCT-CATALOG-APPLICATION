@@ -66,18 +66,6 @@ const NsLayout = ({ children, title, subtitle }) => {
   return (
     <div className="nsl-root">
 
-      {/* ── Announcement Bar ─────────────────────────── */}
-      <div className="nsl-topbar">
-        <div className="nsl-topbar-left">
-          <Phone size={12}/> Need help? +91 98765 43210
-        </div>
-        <div className="nsl-topbar-center" key={promoIdx}>
-          <span>{PROMOS[promoIdx].icon}</span>
-          <span>{PROMOS[promoIdx].text}</span>
-        </div>
-        <div className="nsl-topbar-right">EN &nbsp;|&nbsp; ₹ INR</div>
-      </div>
-
       {/* ── Header ───────────────────────────────────── */}
       <header className="nsl-header">
         <Link to="/home" className="nsl-logo">
@@ -103,7 +91,10 @@ const NsLayout = ({ children, title, subtitle }) => {
             style={{ position: 'relative' }}
             onClick={e => { e.stopPropagation(); setProfileOpen(o => !o); }}
           >
-            <User size={21}/><span>Account</span>
+            <div className="nsl-icon-wrap">
+              <User size={21}/>
+            </div>
+            <span>Account</span>
             {profileOpen && (
               <div className="nsl-profile-drop" onClick={e => e.stopPropagation()}>
                 <button onClick={() => { setProfileOpen(false); navigate('/profile'); }}>
@@ -127,13 +118,16 @@ const NsLayout = ({ children, title, subtitle }) => {
 
           {!admin && (
             <Link to="/cart" className="nsl-hicon">
-              <Heart size={21}/><span>Wishlist</span>
+              <div className="nsl-icon-wrap">
+                <Heart size={21}/>
+              </div>
+              <span>Wishlist</span>
             </Link>
           )}
 
           {!admin && (
             <Link to="/cart" className="nsl-hicon">
-              <div style={{ position: 'relative' }}>
+              <div className="nsl-icon-wrap" style={{ position: 'relative' }}>
                 <ShoppingCart size={21}/>
                 <span className="nsl-badge">0</span>
               </div>

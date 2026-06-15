@@ -91,9 +91,7 @@ const SERVICES = [
   { Icon: Package, title: 'Storefront Catalog', desc: 'Browse products instantly with responsive search indices and category filters.' },
   { Icon: Users, title: 'RBAC Role Mapping', desc: 'Manage access matrices, authorize visibility endpoints, and register roles.' },
   { Icon: ListCollapse, title: 'Category Manager', desc: 'Add, update, and categorize inventory records cleanly from the dashboard.' },
-  { Icon: Database, title: 'Bulk CSV Ingestion', desc: 'Import thousands of product records at once via CSV or the DummyJSON bridge.' },
-  { Icon: ShoppingCart, title: 'Checkout & Orders', desc: 'Verify store cart subtotals and check out using integrated store pickup queues.' },
-  { Icon: RefreshCw, title: 'Sync Inventory', desc: 'Re-align frontends and warehouse inventories instantly in single transaction queries.' }
+  { Icon: ShoppingCart, title: 'Checkout & Orders', desc: 'Verify store cart subtotals and check out using integrated store pickup queues.' }
 ];
 
 const FAQS = [
